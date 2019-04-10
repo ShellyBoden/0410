@@ -1,10 +1,11 @@
 let path = require('path');
 
 module.exports = {
-    entry: './assets/js/app.js',
+    entry: './assets/js/script.js',
     output:{
         path: path.join(__dirname, './dist'),
-        filename: 'bundle.js'
+        filename: 'bundle.js',
+        publicPath: './dist/'
     },
     module:{
         rules:[{

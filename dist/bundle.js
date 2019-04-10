@@ -77,35 +77,24 @@
 /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "";
+/******/ 	__webpack_require__.p = "./dist/";
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./assets/js/app.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./assets/js/script.js");
 /******/ })
 /************************************************************************/
 /******/ ({
-
-/***/ "./assets/js/app.js":
-/*!**************************!*\
-  !*** ./assets/js/app.js ***!
-  \**************************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _js_script__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../js/script */ \"./assets/js/script.js\");\n/* harmony import */ var _js_script__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_js_script__WEBPACK_IMPORTED_MODULE_1__);\n\n // import bird from '../images/bird.jpg';\n// import squirrel from '../images/squirrel.jpg';\n// import '../css/normalize.css';\n// import '../css/style.css';\n// $('#image__bird').attr(\"src\", bird);\n// $('#image__squirrel').attr(\"src\", squirrel);\n\n//# sourceURL=webpack:///./assets/js/app.js?");
-
-/***/ }),
 
 /***/ "./assets/js/script.js":
 /*!*****************************!*\
   !*** ./assets/js/script.js ***!
   \*****************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-eval("$(document).ready(function () {\n  // when a hanburger menu is clicked\n  var $ul = $(\".nav__list\"),\n      $menu = $(\".nav__menu\");\n  $($menu).click(function () {\n    // toggle menu-click Class\n    $ul.toggleClass(\"menu-click\");\n  }); // end click event handler\n});\n\n//# sourceURL=webpack:///./assets/js/script.js?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);\n\njquery__WEBPACK_IMPORTED_MODULE_0___default()(document).ready(function () {\n  // when a hanburger menu is clicked\n  var $ul = jquery__WEBPACK_IMPORTED_MODULE_0___default()(\".nav__list\"),\n      $menu = jquery__WEBPACK_IMPORTED_MODULE_0___default()(\".nav__menu\");\n  jquery__WEBPACK_IMPORTED_MODULE_0___default()($menu).click(function () {\n    // toggle menu-click Class\n    $ul.toggleClass(\"menu-click\");\n  }); // end click event handler\n});\n\n//# sourceURL=webpack:///./assets/js/script.js?");
 
 /***/ }),
 
