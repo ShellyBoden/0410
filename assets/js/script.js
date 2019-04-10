@@ -1,5 +1,3 @@
-let $ = require('jquery');
-
 $(document).ready(function () {
 	// when a hanburger menu is clicked
 	let $ul = $(".nav__list"),
