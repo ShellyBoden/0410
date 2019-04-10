@@ -9,6 +9,18 @@ module.exports = {
     },
     module:{
         rules:[{
+            test: /\.(jpe?g|png|gif|svg)$/,
+            use:[{
+                loader: 'url-loader',
+                options:{
+                    limit: 100000,
+                    outputPath: './images/'
+                }
+            },
+            'image-webpack-loader'
+            ]
+        },
+        {
             test: /\.(js)$/,
             exclude: /(node_modules)/,
             use:{
