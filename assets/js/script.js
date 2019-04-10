@@ -1,6 +1,8 @@
 import $ from 'jquery' ;
 import bird from '../images/bird.jpg';
 import squirrel from '../images/squirrel.jpg';
+import '../css/normalize.css';
+import '../css/style.css';
 import "../css/fonts/PT-Sans.eot";
 import "../css/fonts/PT-Sans-Bold.eot";
 import "../css/fonts/PT-Sans-Italic.eot";
