@@ -15,7 +15,7 @@ module.exports = {
     entry: './assets/js/script.js',
     output:{
         path: path.join(__dirname, './dist'),
-        filename: 'bundle.js',
+        filename: 'bundle.[chunkhash].js',
         publicPath: './dist/'
     },
     module:{
@@ -68,6 +68,12 @@ module.exports = {
     },
     plugins: [
         new ExtractTextPlugin('css/style.[hash].css'),
-        ...htmlPlugins
-    ]
+        ...htmlPlugins,
+        new HtmlWebpackPlugin({
+            template:'assets/index.html'
+        })
+    ],
+    devServer: {
+       contentBase: 'dist'
+    }
 } 
